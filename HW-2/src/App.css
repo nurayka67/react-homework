@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.user-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}

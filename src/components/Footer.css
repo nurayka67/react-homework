@@ -1,0 +1,18 @@
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.highlight {
+    color: #a777e3;
+    font-weight: bold;
+}

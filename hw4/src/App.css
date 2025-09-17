@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-section input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.input-section button, .filters button {
+  padding: 10px 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-section button:hover, .filters button:hover {
+  background: #5a67d8;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.filters button.active {
+  background: #4a5568;
+}
+
+.task-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.task.completed {
+  opacity: 0.7;
+  background: #f0fff4;
+}
+
+.task input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.task span {
+  flex: 1;
+  font-size: 14px;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.task button {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #c53030;
+}
+
+.empty {
+  text-align: center;
+  color: #718096;
+  font-style: italic;
+  padding: 20px;
+}
